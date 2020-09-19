@@ -1,0 +1,17 @@
+{
+    "key1": {
+        "name": "Dr. T",
+        "age": 42,
+        "uid": "LL4vjHwHqPTIC8upLUmEK8HJfmd2"
+    },
+    "key2": {
+        "name": "Jacob",
+        "age": 36,
+        "uid": "abuck"
+    },
+    "key3": {
+        "name": "Abbey",
+        "age": 28,
+        "uid": "youngbuck"
+    }
+}
