@@ -7,6 +7,13 @@ const getUser = (userObj) => {
   axios.get(`${baseUrl}/farmers.json?orderBy="uid"&equalTo="${userObj.uid}"`)
     .then((resp) => {
       if (Object.values(resp.data).length === 0) {
+        axios.post(`${baseUrl}/farmers.json`, {
+          image: userObj.image,
+          uid: userObj.uid,
+          displayName: userObj.displayName,
+          email: userObj.email,
+          lastSignInTime: userObj.lastSignIn
+        });
         // POST OBJECT TO FARMERS
         // {
         //   image:
